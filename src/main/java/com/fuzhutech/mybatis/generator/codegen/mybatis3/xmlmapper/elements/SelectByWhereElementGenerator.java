@@ -8,6 +8,11 @@ import org.mybatis.generator.codegen.mybatis3.ListUtilities;
 import org.mybatis.generator.codegen.mybatis3.MyBatis3FormattingUtilities;
 import org.mybatis.generator.codegen.mybatis3.xmlmapper.elements.AbstractXmlElementGenerator;
 
+/**
+ * 
+ * @author fuzhu
+ * 
+ */
 public class SelectByWhereElementGenerator extends AbstractXmlElementGenerator {
 
   public SelectByWhereElementGenerator(boolean isSimple) {

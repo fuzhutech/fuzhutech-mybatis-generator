@@ -5,6 +5,11 @@ import org.mybatis.generator.api.dom.xml.TextElement;
 import org.mybatis.generator.api.dom.xml.XmlElement;
 import org.mybatis.generator.codegen.mybatis3.xmlmapper.elements.AbstractXmlElementGenerator;
 
+/**
+ * 
+ * @author fuzhu
+ * 
+ */
 public class CountByPageInfoElementGenerator extends AbstractXmlElementGenerator {
 
   public CountByPageInfoElementGenerator(boolean isSimple) {
