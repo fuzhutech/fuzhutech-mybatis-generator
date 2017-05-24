@@ -44,7 +44,12 @@ public class DeleteByWhereElementGenerator extends AbstractXmlElementGenerator {
     sb.append(introspectedTable.getFullyQualifiedTableNameAtRuntime()); // 数据库表名
     answer.addElement(new TextElement(sb.toString()));
 
-    XmlElement dynamicElement = new XmlElement("where"); //$NON-NLS-1$
+    //XmlElement dynamicElement = new XmlElement("where"); //$NON-NLS-1$
+    //<trim prefix="WHERE" prefixOverrides="AND|OR" suffixOverrides="AND|OR">
+    XmlElement dynamicElement = new XmlElement("trim"); //$NON-NLS-1$
+    dynamicElement.addAttribute(new Attribute("prefix", "WHERE"));
+    dynamicElement.addAttribute(new Attribute("prefixOverrides", "AND|OR"));
+    dynamicElement.addAttribute(new Attribute("suffixOverrides", "AND|OR"));
     answer.addElement(dynamicElement);
 
     for (IntrospectedColumn introspectedColumn : ListUtilities
