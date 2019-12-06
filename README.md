@@ -6,6 +6,8 @@
 
 ## 主要修改点
 * 待续
+## 版本变更
 
+[CHANGELOG.md](https://github.com/fuzhutech/fuzhutech--mybatis-generator/blob/master/CHANGELOG.md)
 ## 作者博客
   (http://www.fuzhutech.com)
